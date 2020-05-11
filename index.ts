@@ -1,4 +1,4 @@
-import {readFile} from "fs";
+import {readFile} from "fs"
 
 const fetch = require('node-fetch')
 
@@ -9,7 +9,7 @@ const TIME_ZONE_API_KEY = 'FZBOIWSUNCQ9'
 const main = async () => {
 
   readFile('./city.list.json', async (err, data) => {
-    const cityList = JSON.parse(data.toString());
+    const cityList = JSON.parse(data.toString())
 
     const input = "Fort Collins, 10005, Tokyo, São Paulo, Pluto"
 
@@ -25,7 +25,7 @@ const main = async () => {
         const zipCodeRequest = await fetch(zipCodeUrl)
         const zipCodeJson = await zipCodeRequest.json()
 
-        city = zipCodeJson.city;
+        city = zipCodeJson.city
       }
 
       const cityObj = cityList.filter((cityItem) => {
@@ -33,7 +33,7 @@ const main = async () => {
       })
 
       if (cityObj && cityObj.length >= 1) {
-        const cityData = cityObj[0];
+        const cityData = cityObj[0]
         const cityId = cityData.id
         const openWeatherUrl = `http://api.openweathermap.org/data/2.5/weather?id=${cityId}&appid=${OPEN_WEATHER_MAP_API_KEY}`
         const weatherResponse = await fetch(openWeatherUrl)
