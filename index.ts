@@ -15,7 +15,6 @@ const main = async () => {
 
     for (const location of locationArray) {
       const time = 0
-      const weather = ''
 
       let city = location.trim()
 
