@@ -10,7 +10,11 @@ const input = "Fort Collins, 10005, Tokyo, São Paulo, Pluto"
 export const main = async (input) => {
 
   readFile('./city.list.json', async (err, data) => {
-    const cityList = JSON.parse(data.toString())
+    if (err) {
+      console.log('Error reading city list.')
+      return
+    }
+    const cityList = JSON.parse(data.toString());
 
     const locationArray = input.split(",")
 

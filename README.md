@@ -15,3 +15,14 @@ The code should be self-documenting, although you can use comments to convey the
 - `npm install`
 - Compile typescript
 - `node index.js`
+
+#### Tests:
+- Compile typescript
+- `npm test`
+
+Limitations:
+- The APIs used have rate limits on their free tiers.
+- ZipCodeAPI limits to 10 requests/hour
+- TimeZoneAPI limits to 1 request/second
+- OpenWeatherMap limits to 1000 requests/day and 60 requests/minute
+- If tests/application do not work, please try waiting before trying again
