@@ -1,4 +1,4 @@
-import {getFormattedTime, getTime} from "../TimeService";
+import {getFormattedTime, getTime} from "../TimeService"
 
 test('get time valid', async () => {
   const latitude = 40.43
