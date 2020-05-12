@@ -1,4 +1,4 @@
-import {makeRequest} from "./RequestService";
+import {makeRequest} from "./RequestService"
 
 const OPEN_WEATHER_MAP_API_KEY = '58c836297221843ddfc55ecb941c3c77'
 

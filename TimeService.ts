@@ -1,4 +1,4 @@
-import {makeRequest} from "./RequestService";
+import {makeRequest} from "./RequestService"
 
 const TIME_ZONE_API_KEY = 'FZBOIWSUNCQ9'
 

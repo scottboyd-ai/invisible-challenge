@@ -1,9 +1,9 @@
 'use strict'
 
-import {readFile} from "fs";
+import {readFile} from "fs"
 import {getCityByZip, getCityFromList} from "./CityService"
-import {getWeather, getWeatherDescription} from "./WeatherService";
-import {getFormattedTime, getTime} from "./TimeService";
+import {getWeather, getWeatherDescription} from "./WeatherService"
+import {getFormattedTime, getTime} from "./TimeService"
 
 const input = "Fort Collins, 10005, Tokyo, São Paulo, Pluto"
 
@@ -11,7 +11,6 @@ export const main = async (input) => {
 
   readFile('./city.list.json', async (err, data) => {
     const cityList = JSON.parse(data.toString())
-
 
     const locationArray = input.split(",")
 

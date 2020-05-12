@@ -1,4 +1,4 @@
-import {makeRequest} from "./RequestService";
+import {makeRequest} from "./RequestService"
 const ZIP_CODE_API_KEY = 'JEf3YrmlDLaItqjZDgJw86htLRIxB2vzOAEMnGXTdpCDMOFEGdqq3HwooIzcBOgR'
 
 export const getCityByZip = async (zipCode: string | number) => {
