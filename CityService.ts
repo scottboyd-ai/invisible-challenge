@@ -9,6 +9,8 @@ export const getCityByZip = async (zipCode: string | number) => {
 
 export const getCityFromList = async (city: string, cityList: any) => {
   return cityList.filter((cityItem: any) => {
-    return cityItem.name === city
+    const cityItemName = cityItem.name.toLowerCase()
+    const cityName = city.toLowerCase()
+    return cityItemName === cityName
   })
 }
